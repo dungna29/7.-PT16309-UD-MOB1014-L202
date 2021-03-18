@@ -9,7 +9,7 @@ package BAI1_LAMQUENVOIJAVA;
  *
  * @author Dungna29
  */
-public class S2_BienLaGi {
+public class B2_BienLaGi {
 
     /*
         Bài 2: Khái niệm về biến và khai báo biến
@@ -50,7 +50,7 @@ public class S2_BienLaGi {
         //Chuỗi String
         String name = "LONG";
         
-        //Logic
+        //Logic 
         boolean logic1 = true;
         boolean logic2 = false;
         
@@ -59,6 +59,12 @@ public class S2_BienLaGi {
         var year = 2000;
         var char1 = 'a';
         var diemJava = 8.6;
+        
+        
+        /*
+        Bài 1: Khai báo mỗi kiểu dữ liệu 1 lần và in kết quả ra màn hình
+        bằng câu lệnh sout + tab.
+        */
     }
 
 }
