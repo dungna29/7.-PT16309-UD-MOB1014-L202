@@ -5,6 +5,8 @@
  */
 package BAI1_LAMQUENVOIJAVA;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Nguyen Anh Dung
@@ -12,16 +14,14 @@ package BAI1_LAMQUENVOIJAVA;
 public class B5_CacHamToanHoc {
 
     public static void main(String[] args) {
-        
+
         // *********** Toán tử toán học trong Java ***********
         //Thứ tự ưu tiên của toán học 5 +7*2 - 4/2 (Nhân và chia -> Cộng và trừ -> Trái sang phải);
-        
         //Ví dụ về thứ tự ưu tiên toán học
         System.out.println(5 + 7 * 2 - 4 / 2); // Nhân chia trước cộng trừ sau
-        
+
         //Lưu ý trong lập trình
         //Toán tử toán học cộng (+) có thể sử dụng để cộng chuỗi String + String = StringString || dung + anh = dunganh
-
         // *********** Các hàm toán học có sẵn trong java  ***********
         //Math.min(a, b) - Lấy số nhỏ nhất của 2 số a và b (Sử dụng nhiều)      
         //Math.max(a, b) - Lấy số lớn nhất của 2 số và b
@@ -32,21 +32,27 @@ public class B5_CacHamToanHoc {
         //Math.floor(a) - Lấy số nguyên dưới của a
         //Math.round(a) - Làm tròn số của a
         //Math.random() - Sinh số ngẫu nhiên từ 0 đến 1 (0.0 and less than 1.0) 
-        
         //Ví dụ về hàm Math
         //Tìm giá trị nhỏ nhất và lớn nhất của 2 số sau hoặc bạn bắt 
         //người dùng nhập vào 2 số và chỉ ra số nào lớn nhất hoặc nhỏ nhất         
-    
         //Khai báo 2 biến a và b có khởi tạo giá trị ban đầu.
-       
         // Sử dụng hàm toán học Math Min để tìm ra số nhỏ nhất trong 2 số a và b trên.
-      
         // Sử dụng hàm toán học Math Round để làm tròn số a
-           
-        
         //Các hàm còn lại các bạn tự lấy ví dụ cho bản thân để nhớ.
-        
-        
+        Scanner sc = new Scanner(System.in);
+        int number, pow, temp = 0, kq;
+        System.out.println("Mời mời bạn nhập số: ");
+        number = Integer.parseInt(sc.nextLine());
+        System.out.println("Mời mời bạn nhập số mũ: ");
+        pow = Integer.parseInt(sc.nextLine());
+        kq = 1;
+        do {
+            kq = kq * number;
+
+            temp++;
+        } while (temp < pow);
+        System.out.println(kq);
+        System.out.println(Math.pow(number, pow));
     }
 
 }

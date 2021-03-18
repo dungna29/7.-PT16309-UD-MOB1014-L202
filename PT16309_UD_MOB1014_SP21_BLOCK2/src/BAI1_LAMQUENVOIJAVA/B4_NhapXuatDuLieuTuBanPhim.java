@@ -52,7 +52,7 @@ public class B4_NhapXuatDuLieuTuBanPhim {
         System.out.println("Chào bạn : " + input);
         
         
-        //Có rất nhiều các next kiểu dữ liệu khác nhau sẽ tương ứng với kiểu dữ liệu cần gán        
+       
         /*
         Bài 1: Chương trình cho phép nhập họ và tên sinh viên, năm sinh, mã sinh viên 
         từ bàn phím và xuất ra định dạng sau: 
