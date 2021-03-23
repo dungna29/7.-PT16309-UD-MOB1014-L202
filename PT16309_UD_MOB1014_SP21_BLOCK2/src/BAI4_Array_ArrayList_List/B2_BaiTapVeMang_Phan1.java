@@ -18,6 +18,20 @@ public class B2_BaiTapVeMang_Phan1 {
         */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-      
+        int sizeArr;
+        String[] arrNames;//Khởi tạo
+        
+        System.out.println("Bạn muốn nhập vào bao nhiêu tên: ");
+        sizeArr = Integer.parseInt(sc.nextLine());//Lấy kích thước mảng do người dùng nhập vào
+        arrNames = new String[sizeArr];//Khởi tạo mảng theo kích thước do người dùng
+        
+        for (int i = 0; i < sizeArr; i++) {
+            System.out.println("Mời bạn nhập tên thứ: " + i);
+            arrNames[i] = sc.nextLine();//Gán giá trị cho mảng theo index
+        }
+        
+        for (String x : arrNames) {
+            System.out.print(x + " ");
+        }
     }
 }
