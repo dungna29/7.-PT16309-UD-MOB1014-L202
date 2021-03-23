@@ -70,8 +70,8 @@ public class B9_Switch_Case {
         }
 
         /*
-        Bài 1: Xây dựng 1 chương trình máy tính bỏ túi cho phép toán với 3 số gồm các
-        chức năng sau: (Phải sử dụng IF ELSE)
+        Bài 1: Xây dựng 1 chương trình máy tính bỏ túi cho phép toán với 3 số
+        gồm các chức năng sau: (Phải sử dụng Switch Case)
             a. Phép cộng
             b. Phép trừ
             c. Phép nhân
