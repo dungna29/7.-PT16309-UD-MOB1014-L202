@@ -5,12 +5,15 @@
  */
 package BAI4_Array_ArrayList_List;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Dungna29
  */
 public class BaiTAP_LAB1_LAB2 {
-     /*
+
+    /*
          * Bài tập ôn tập tổng hợp:
          * Viết 1 chương trình có menu sử dụng switch case và vòng lặp:
          *         ------Chương trình 1-------
@@ -44,12 +47,44 @@ public class BaiTAP_LAB1_LAB2 {
         - Clean Code + || - 1 ĐIỂM
         - Áp dụng được kiến thức của đầu bài đưa ra + || - 1 Điểm
         - Copy bài có sẵn hoặc copy code ở bài cũ vào mặc định 0 điểm.
-         */
+     */
+    static String input;
+    static String[] arrName;
+    static int[] namSinh;
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                
+
+        while (true) {
+            System.out.println("1. Thêm thông tin");
+            System.out.println("2. Xuất thông tin");
+            System.out.println("Mời bạn chọn chức năng: ");
+            input = sc.nextLine();
+            switch (input) {
+                case "1":      
+                    nhapTT();
+                    break;
+                case "2":
+                    for (int i = 0; i < arrName.length; i++) {
+                        System.out.println(arrName[i] + namSinh[i]);
+                    }
+                    break;
+                default:
+                    System.out.println("");
             }
+        }
+    }
+
+    static void nhapTT() {
+        System.out.println("Bạn muốn nhập bao nhiêu? ");
+        input = sc.nextLine();
+        arrName = new String[Integer.parseInt(input)];
+        namSinh = new int[Integer.parseInt(input)];
+        for (int i = 0; i < arrName.length; i++) {
+            System.out.println("Mời bạn nhập tên: ");
+            arrName[i] = sc.nextLine();
+            System.out.println("Mời bạn nhập năm sinh: ");
+            namSinh[i] = Integer.parseInt(sc.nextLine());
         }
     }
 }
