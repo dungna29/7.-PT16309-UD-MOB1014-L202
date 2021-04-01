@@ -5,18 +5,13 @@
  */
 package BAI_TAP_MAU_NHAP_XUAT_OOP1;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Dungna29
  */
-public class Main {
-
+public class Main {//Code switch case và menu ở đây
     public static void main(String[] args) {
-        //Muốn chạy chức năng gọi đến Class ServiceSinhVien
-        ServiceSinhVien serviceSinhVien = new ServiceSinhVien();
-        serviceSinhVien.tao2SVao();
-        serviceSinhVien.tao1SinhVienDoNguoiDung();
+        ServiceSinhVien sv = new ServiceSinhVien();
+        sv.bai1Tao2DoiTuongSVBangContructor();
     }
 }
