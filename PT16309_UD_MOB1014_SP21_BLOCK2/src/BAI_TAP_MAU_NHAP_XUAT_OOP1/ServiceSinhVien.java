@@ -50,7 +50,7 @@ public class ServiceSinhVien {
         sv1.setNamSinh(Integer.parseInt(_sc.nextLine()));
         System.out.println("Mời bạn nhập Điểm: ");
         sv1.setDiemJava(Double.parseDouble(_sc.nextLine()));
-        
+
         sv1.inRaManHinh();
     }
 
@@ -97,7 +97,26 @@ public class ServiceSinhVien {
             _lstSinhViens.add(_sv);//Thêm đối tượng sau vòng chạy vào trong List
         }
     }
-    void getListSinhVien(){
+
+    void themSinhVienList1() {
+        int size;
+        size = Integer.parseInt(getInputValue("số lượng: "));
+        for (int i = 0; i < size; i++) {
+            _sv = new SinhVien();
+            _sv.setTen(getInputValue("nhập tên: "));
+            _sv.setMsv(getInputValue("nhập mã: "));
+            _sv.setNamSinh(Integer.parseInt(getInputValue("nhập ns: ")));
+            _sv.setDiemJava(Double.parseDouble(getInputValue("nhập điểm: ")));
+            _lstSinhViens.add(_sv);//Thêm đối tượng sau vòng chạy vào trong List
+        }
+    }
+    //Đây là phương thức giúp các bạn lười trong lập trình
+    String getInputValue(String text) {
+        System.out.println("Mời bạn nhập " + text);
+        return _sc.nextLine();
+    }
+
+    void getListSinhVien() {
         for (int i = 0; i < _lstSinhViens.size(); i++) {
             _lstSinhViens.get(i).inRaManHinh();
         }
