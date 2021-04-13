@@ -133,8 +133,9 @@ public class ServiceSinhVien {
 //        });
         
         //Cashc 2: Dùng lamda để sắp xếp
-        _lstStudent.sort((o1, o2) -> o1.getTen().compareTo(o2.getTen()));
-
+        //_lstStudent.sort((o1, o2) -> o1.getTen().compareTo(o2.getTen()));
+        
+         Collections.sort(_lstStudent, Comparator.comparing(Student::getDiemJava));
         //Lambda expression for sorting theo điểm
         //_lstStudent.sort((Student s1, Student s2)->s1.getDiemJava()-s2.getDiemJava());  
     }
